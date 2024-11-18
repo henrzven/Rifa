@@ -17,4 +17,4 @@ jobs:
             | xargs -I {} curl -s -X PATCH \
             -H "Authorization: token $GITHUB_TOKEN" \
             -d '{"state": "closed"}' \
-            "https://api.github.com/repos/henrzven/selector-rifa/issues/{}"
+            "https://api.github.com/repos/henrzven/Rifa/issues/{}"
