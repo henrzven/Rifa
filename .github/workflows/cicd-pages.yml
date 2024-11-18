@@ -42,7 +42,7 @@ jobs:
           script: |
             const fs = require('fs');
             await github.paginate(github.rest.issues.listComments,
-              { owner: 'henrzven', repo: 'selector-rifa', issue_number: ${{ env.ISSUE_ID }} },
+              { owner: 'henrzven', repo: 'Rifa', issue_number: ${{ env.ISSUE_ID }} },
               (response) => response.data.map((issuecomment) => issuecomment.user.login)
             )
             .then((commenters) => {
